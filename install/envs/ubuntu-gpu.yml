@@ -27,7 +27,7 @@ dependencies:
   - pyfiglet
   - mypy
   - numpy
-  - tensorflow==2.2.0
+  - tensorflow-gpu==2.2.0
   - pip:
     - git+https://github.com/autorope/keras-vis.git
     - simple-pid
