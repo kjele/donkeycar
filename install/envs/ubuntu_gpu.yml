@@ -1,0 +1,20 @@
+name: donkey
+dependencies:
+
+- python=3.6
+- h5py
+- pillow
+- tensorflow-gpu==1.13.1
+- opencv
+- matplotlib
+- tornado
+- docopt
+- pandas
+- pylint
+- pytest
+- pip
+
+- pip:
+  - moviepy
+  - paho-mqtt
+  - PrettyTable
