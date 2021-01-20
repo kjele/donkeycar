@@ -13,6 +13,7 @@ models to help direct the vehicles motion.
 
 
 import os
+import sys
 import numpy as np
 
 import tensorflow as tf
@@ -25,6 +26,9 @@ from tensorflow.python.keras.layers.merge import concatenate
 from tensorflow.python.keras.layers import LSTM
 from tensorflow.python.keras.layers.wrappers import TimeDistributed as TD
 from tensorflow.python.keras.layers import Conv3D, MaxPooling3D, Cropping3D, Conv2DTranspose
+
+if sys.platform == 'darwin':
+    os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 if tf.__version__ == '2.2.0':
     gpus = tf.config.experimental.list_physical_devices('GPU')
